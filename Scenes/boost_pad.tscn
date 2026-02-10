@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://d07xbbe2d04f5"]
 
+[ext_resource type="Script" uid="uid://6m6bebvq3ael" path="res://Scripts/area_3d.gd" id="1_rjw2q"]
+
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqvq1"]
 albedo_color = Color(1, 1, 0, 1)
 
@@ -14,7 +16,11 @@ size = Vector3(3, 0.4802915, 8)
 material = SubResource("StandardMaterial3D_aqvq1")
 
 [node name="Area3D" type="Area3D" parent="." unique_id=1270303218]
+script = ExtResource("1_rjw2q")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2105764927]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 2.5)
 shape = SubResource("BoxShape3D_rjw2q")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area3D" to="Area3D" method="_on_body_exited"]
