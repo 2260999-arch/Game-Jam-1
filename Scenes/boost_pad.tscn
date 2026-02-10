@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://d07xbbe2d04f5"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_aqvq1"]
+albedo_color = Color(1, 1, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_rjw2q"]
+size = Vector3(3, 2, 8)
+
+[node name="BoostPad" type="Node3D" unique_id=2039738930]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="." unique_id=598812834]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25985426, 2.5)
+size = Vector3(3, 0.4802915, 8)
+material = SubResource("StandardMaterial3D_aqvq1")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1270303218]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=2105764927]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 2.5)
+shape = SubResource("BoxShape3D_rjw2q")

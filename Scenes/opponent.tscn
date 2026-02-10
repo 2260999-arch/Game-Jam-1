@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://cyncrq3cem6vm"]
+
+[ext_resource type="Script" uid="uid://dnr6ybpebhemi" path="res://Scenes/opponent.gd" id="1_modcp"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_cj3sh"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_iti4p"]
+material = SubResource("StandardMaterial3D_cj3sh")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_dtjkg"]
+
+[node name="Opponent" type="RigidBody3D" unique_id=705691536]
+script = ExtResource("1_modcp")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=1385352954]
+mesh = SubResource("SphereMesh_iti4p")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=912403719]
+shape = SubResource("SphereShape3D_dtjkg")

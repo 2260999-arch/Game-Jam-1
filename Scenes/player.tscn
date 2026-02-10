@@ -1,0 +1,31 @@
+[gd_scene format=3 uid="uid://ckudr8chj1kgo"]
+
+[ext_resource type="Script" uid="uid://q40kcqtrbd42" path="res://Scripts/player.gd" id="1_v0iea"]
+
+[sub_resource type="SphereMesh" id="SphereMesh_sh265"]
+
+[sub_resource type="Gradient" id="Gradient_v0iea"]
+offsets = PackedFloat32Array(0, 0.09821428, 0.21130952, 0.3065476, 0.41369048, 0.5208333, 0.6220238, 0.72321427, 0.83630955, 0.9375, 1)
+colors = PackedColorArray(0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1, 1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_cvnsp"]
+gradient = SubResource("Gradient_v0iea")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6t5aa"]
+albedo_texture = SubResource("GradientTexture2D_cvnsp")
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_4flbx"]
+
+[node name="Player" type="RigidBody3D" unique_id=2017531020]
+script = ExtResource("1_v0iea")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=782425508]
+mesh = SubResource("SphereMesh_sh265")
+surface_material_override/0 = SubResource("StandardMaterial3D_6t5aa")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." unique_id=495889229]
+shape = SubResource("SphereShape3D_4flbx")
+
+[node name="Camera3D" type="Camera3D" parent="." unique_id=1325748567]
+transform = Transform3D(1, 0, 0, 0, 0.9659259, 0.25881907, 0, -0.25881907, 0.9659258, 0, 1, 2)
+current = true
