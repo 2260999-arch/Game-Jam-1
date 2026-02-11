@@ -1,0 +1,26 @@
+[gd_scene format=3 uid="uid://dsp5xbhp3dw3p"]
+
+[ext_resource type="Script" uid="uid://bmb2dkeuhea3s" path="res://Scripts/jump_pad.gd" id="1_3uxp3"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_6eio6"]
+albedo_color = Color(1, 0, 0, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3uxp3"]
+size = Vector3(3, 2, 8)
+
+[node name="Jump Pad" type="Node3D" unique_id=1098847911]
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="." unique_id=1485407399]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.25985426, 2.5)
+size = Vector3(3, 0.4802915, 8)
+material = SubResource("StandardMaterial3D_6eio6")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1057063217]
+script = ExtResource("1_3uxp3")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=645509405]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 2.5)
+shape = SubResource("BoxShape3D_3uxp3")
+
+[connection signal="body_entered" from="Area3D" to="Area3D" method="_on_body_entered"]
+[connection signal="body_exited" from="Area3D" to="Area3D" method="_on_body_exited"]

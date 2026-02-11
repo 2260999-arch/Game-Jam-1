@@ -15,6 +15,9 @@ albedo_texture = SubResource("GradientTexture2D_rsyfn")
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5262"]
 albedo_color = Color(0.4862745, 0.24705882, 0, 1)
 
+[sub_resource type="BoxShape3D" id="BoxShape3D_qiomv"]
+size = Vector3(20, 75, 3)
+
 [node name="Grass Platform" type="Node3D" unique_id=523264526]
 
 [node name="CSGBox3D11" type="CSGBox3D" parent="." unique_id=210872417]
@@ -28,3 +31,9 @@ transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, 0.25881907, 0.96592
 use_collision = true
 size = Vector3(71, 30, 1)
 material = SubResource("StandardMaterial3D_n5262")
+
+[node name="Area3D" type="Area3D" parent="." unique_id=1044615233]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1748938095]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -50)
+shape = SubResource("BoxShape3D_qiomv")
