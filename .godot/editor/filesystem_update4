@@ -1,3 +1,2 @@
-res://Scenes/opponent.tscn
-res://Scripts/area_3d.gd
-res://Scenes/boost_pad.tscn
+res://Scenes/grass_platform.tscn
+res://Scenes/test_level.tscn

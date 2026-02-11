@@ -1,7 +1,8 @@
 extends Area3D
 
+@export var boost_speed = 50
 var actively_boosting = false
-var thing = Node3D
+var thing = RigidBody3D
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	pass # Replace with function body.
@@ -13,12 +14,14 @@ func _process(delta: float) -> void:
 
 
 func _on_body_entered(body: Node3D) -> void:
-	actively_boosting = true
-	thing = body
+	if body is RigidBody3D:
+		actively_boosting = true
+		thing = body
 
 
 func _on_body_exited(body: Node3D) -> void:
 	actively_boosting = false
 
 func _physics_process(delta: float) -> void:
-	pass
+	if actively_boosting:
+		thing.apply_force(Vector3(0,0,-boost_speed))

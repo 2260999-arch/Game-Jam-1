@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://cgqpg3bl07ghk"]
+
+[sub_resource type="Gradient" id="Gradient_xdow6"]
+offsets = PackedFloat32Array(0.008196721, 0.510929, 1)
+colors = PackedColorArray(0, 0.7529412, 0.24705882, 1, 0, 0.45882353, 0.24705882, 1, 1.973361e-06, 0.75101936, 0.24835077, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rsyfn"]
+gradient = SubResource("Gradient_xdow6")
+fill_from = Vector2(1, 1)
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1rc8e"]
+albedo_texture = SubResource("GradientTexture2D_rsyfn")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5262"]
+albedo_color = Color(0.4862745, 0.24705882, 0, 1)
+
+[node name="Grass Platform" type="Node3D" unique_id=523264526]
+
+[node name="CSGBox3D11" type="CSGBox3D" parent="." unique_id=210872417]
+transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, 0.25881907, 0.96592575, 1.08608106e-07, 0.96592593, -0.258819, -4.0533092e-07, 1.6485926e-06, 15, -4)
+use_collision = true
+size = Vector3(71, 1, 1)
+material = SubResource("StandardMaterial3D_1rc8e")
+
+[node name="CSGBox3D19" type="CSGBox3D" parent="." unique_id=324536607]
+transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, 0.25881907, 0.96592575, 1.08608106e-07, 0.96592593, -0.258819, -4.0533092e-07, 1.1893143e-06, 0, 0)
+use_collision = true
+size = Vector3(71, 30, 1)
+material = SubResource("StandardMaterial3D_n5262")

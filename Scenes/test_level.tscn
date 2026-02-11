@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://cyncrq3cem6vm" path="res://Scenes/opponent.tscn" id="1_dtjkg"]
 [ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://Scenes/player.tscn" id="1_iti4p"]
+[ext_resource type="PackedScene" uid="uid://d07xbbe2d04f5" path="res://Scenes/boost_pad.tscn" id="3_eglq2"]
+[ext_resource type="PackedScene" uid="uid://cgqpg3bl07ghk" path="res://Scenes/grass_platform.tscn" id="4_rsyfn"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gojnm"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -209,20 +211,14 @@ use_collision = true
 size = Vector3(4.7714844, 1, 5)
 material = SubResource("StandardMaterial3D_2yvf5")
 
-[node name="CSGBox3D11" type="CSGBox3D" parent="." unique_id=1500019299]
-transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, 0.25881907, 0.96592575, 1.08608106e-07, 0.96592593, -0.258819, -4.0533092e-07, 1.6485926e-06, -79.761696, -227.00294)
-use_collision = true
-size = Vector3(71, 1, 1)
-material = SubResource("StandardMaterial3D_7w7ni")
-
-[node name="CSGBox3D19" type="CSGBox3D" parent="." unique_id=1730822267]
-transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, 0.25881907, 0.96592575, 1.08608106e-07, 0.96592593, -0.258819, -4.0533092e-07, 1.1893143e-06, -94.73355, -222.99126)
-use_collision = true
-size = Vector3(71, 30, 1)
-material = SubResource("StandardMaterial3D_akkqd")
-
 [node name="CSGBox3D20" type="CSGBox3D" parent="." unique_id=2041079729]
 transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, -0.25881907, 0.9659257, 2.9672282e-07, 0.96592593, 0.258819, -2.9672282e-07, 7.1754484e-06, -46.41987, -171.04517)
 use_collision = true
 size = Vector3(7, 1, 1)
 material = SubResource("StandardMaterial3D_7w7ni")
+
+[node name="BoostPad" parent="." unique_id=2039738930 instance=ExtResource("3_eglq2")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, -41.68156, -155)
+
+[node name="Grass Platform" parent="." unique_id=523264526 instance=ExtResource("4_rsyfn")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -95, -223)
