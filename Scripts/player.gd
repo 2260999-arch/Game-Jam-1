@@ -1,4 +1,6 @@
 extends RigidBody3D
+class_name Player
+
 
 @onready var mesh_instance_3d: MeshInstance3D = $MeshInstance3D
 @onready var camera_3d: Camera3D = $Camera3D
