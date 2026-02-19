@@ -2,12 +2,12 @@ extends Node3D
 
 @onready var num_gen = RandomNumberGenerator.new()
 @onready var platform_manager := PlatformManager
-@onready var p1 = load("res://Scenes/grass_platform.tscn")
-@onready var p2 = load("res://Scenes/grass_platform_jump.tscn")
-@onready var p3 = load("res://Scenes/grass_platform_speed_boost.tscn")
+@onready var p1 = preload("res://Scenes/grass_platform.tscn")
+@onready var p2 = preload("res://Scenes/grass_platform_jump.tscn")
+@onready var p3 = preload("res://Scenes/grass_platform_speed_boost.tscn")
 @onready var platforms : Array = [p1, p2, p3]
 @onready var next_lvl = 0
-@onready var new_platform = load("res://Scenes/grass_platform.tscn")
+@onready var new_platform = preload("res://Scenes/grass_platform.tscn")
 func _ready() -> void:
 	#Engine.time_scale = 5
 	print('created '+str(name))
@@ -24,7 +24,7 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 		print("func")
 		next_num()
 		print(next_lvl)
-		new_platform=platforms[next_lvl]
+		new_platform=platforms[0]
 		var plat = new_platform.instantiate()
 		#plat.platform_manager = PlatformManager
 		PlatformManager.add_child(plat)

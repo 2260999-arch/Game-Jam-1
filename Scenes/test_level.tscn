@@ -5,7 +5,6 @@
 [ext_resource type="PackedScene" uid="uid://d07xbbe2d04f5" path="res://Scenes/boost_pad.tscn" id="3_eglq2"]
 [ext_resource type="PackedScene" uid="uid://cgqpg3bl07ghk" path="res://Scenes/grass_platform.tscn" id="4_rsyfn"]
 [ext_resource type="PackedScene" uid="uid://dsp5xbhp3dw3p" path="res://Scenes/jump_pad.tscn" id="5_7w7ni"]
-[ext_resource type="PackedScene" uid="uid://bk4od71uygngm" path="res://Scenes/platform_manager.tscn" id="5_btda1"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_gojnm"]
 sky_horizon_color = Color(0.66224277, 0.6717428, 0.6867428, 1)
@@ -81,7 +80,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 40, 63)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 40, 63)
 
 [node name="Player" parent="." unique_id=73469735 instance=ExtResource("1_iti4p")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 40, 63)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -33.85363, -137.90698)
 
 [node name="CSGBox3D5" type="CSGBox3D" parent="." unique_id=1623577904]
 transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, 0.25881907, 0.96592575, 1.08608106e-07, 0.96592593, -0.258819, -4.0533092e-07, 3.7874102e-06, -23.384974, -84.57775)
@@ -225,8 +224,5 @@ transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.965
 [node name="Jump Pad" parent="." unique_id=1098847911 instance=ExtResource("5_7w7ni")]
 transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, -19.440042, -72)
 
-[node name="PlatformManager" parent="." unique_id=1868613595 instance=ExtResource("5_btda1")]
-
-[node name="Grass Platform" parent="PlatformManager" unique_id=523264526 node_paths=PackedStringArray("platformmanager") instance=ExtResource("4_rsyfn")]
+[node name="Grass Platform" parent="." unique_id=523264526 instance=ExtResource("4_rsyfn")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -95, -223)
-platformmanager = NodePath("..")

@@ -1,4 +1,8 @@
+res://Scenes/grass_platform.tscn
+res://Scripts/grass_platform_jump.gd
+res://Scenes/grass_platform_jump.tscn
+res://Scenes/platform.gd
+res://Scenes/grass_platform_speed_boost.tscn
+res://Scenes/test_level.tscn
 res://Scripts/platform.gd
 res://Scripts/player.gd
-res://Scenes/test_level.tscn
-res://Scenes/grass_platform.tscn
