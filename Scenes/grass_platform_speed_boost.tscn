@@ -19,7 +19,10 @@ albedo_texture = SubResource("GradientTexture2D_rsyfn")
 albedo_color = Color(0.4862745, 0.24705882, 0, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qiomv"]
-size = Vector3(20, 75, 8)
+size = Vector3(20, 76, 87)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_py1kb"]
+size = Vector3(28, 1, 91)
 
 [node name="Grass Platform Speed Boost" type="Node3D" unique_id=523264526]
 script = ExtResource("1_py1kb")
@@ -39,8 +42,12 @@ material = SubResource("StandardMaterial3D_n5262")
 [node name="Area3D" type="Area3D" parent="." unique_id=1044615233]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1748938095]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -52.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, -13)
 shape = SubResource("BoxShape3D_qiomv")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D" unique_id=764630637]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0)
+shape = SubResource("BoxShape3D_py1kb")
 
 [node name="CSGBox3D12" type="CSGBox3D" parent="." unique_id=1657291963]
 transform = Transform3D(-2.2713108e-08, 2.1855692e-08, -4.8, 0, 0.9999999, 1.0490737e-07, 0.6000001, 1.4901161e-08, -1.8170488e-07, 1.533773e-06, 18.262081, -1.9944253)

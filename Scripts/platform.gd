@@ -5,7 +5,8 @@ extends Node3D
 @onready var p1 = load("res://Scenes/grass_platform.tscn")
 @onready var p2 = load("res://Scenes/grass_platform_jump.tscn")
 @onready var p3 = load("res://Scenes/grass_platform_speed_boost.tscn")
-@onready var platforms : Array = [p1, p2, p3]
+@onready var p4 = load("res://Scenes/grass_platform_oppenents.tscn")
+@onready var platforms : Array = [p1, p2, p3, p4]
 @onready var next_lvl = 0
 @onready var new_platform = load("res://Scenes/grass_platform.tscn")
 func _ready() -> void:
@@ -39,5 +40,5 @@ func _on_area_3d_body_exited(body: Node3D) -> void:
 		queue_free()
 
 func next_num() -> void:
-	next_lvl = num_gen.randi_range(0,2)
+	next_lvl = num_gen.randi_range(0,3)
 	

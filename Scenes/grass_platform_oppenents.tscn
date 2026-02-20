@@ -1,0 +1,98 @@
+[gd_scene format=3 uid="uid://d38pnx7i75ewn"]
+
+[ext_resource type="PackedScene" uid="uid://cgqpg3bl07ghk" path="res://Scenes/grass_platform.tscn" id="1_2xwry"]
+[ext_resource type="PackedScene" uid="uid://cyncrq3cem6vm" path="res://Scenes/opponent.tscn" id="2_0i20j"]
+[ext_resource type="PackedScene" uid="uid://d07xbbe2d04f5" path="res://Scenes/boost_pad.tscn" id="3_0i20j"]
+[ext_resource type="PackedScene" uid="uid://dsp5xbhp3dw3p" path="res://Scenes/jump_pad.tscn" id="4_vm42s"]
+
+[sub_resource type="Gradient" id="Gradient_xdow6"]
+offsets = PackedFloat32Array(0.008196721, 0.510929, 1)
+colors = PackedColorArray(0, 0.7529412, 0.24705882, 1, 0, 0.45882353, 0.24705882, 1, 1.973361e-06, 0.75101936, 0.24835077, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_rsyfn"]
+gradient = SubResource("Gradient_xdow6")
+fill_from = Vector2(1, 1)
+fill_to = Vector2(0, 1)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_1rc8e"]
+albedo_texture = SubResource("GradientTexture2D_rsyfn")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_n5262"]
+albedo_color = Color(0.4862745, 0.24705882, 0, 1)
+
+[node name="Grass Platform Oppenents" unique_id=523264526 instance=ExtResource("1_2xwry")]
+
+[node name="CSGBox3D11" parent="." index="0" unique_id=210872417]
+transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, 0.25881907, 0.96592575, 1.08608106e-07, 0.96592593, -0.258819, -4.0533092e-07, 1.6485926e-06, 11, -4)
+
+[node name="CSGBox3D19" parent="." index="1" unique_id=324536607]
+transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, 0.25881907, 0.96592575, 1.08608106e-07, 0.96592593, -0.258819, -4.0533092e-07, 1.1893143e-06, -4, 0)
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="." index="3" unique_id=811883513]
+transform = Transform3D(-3.7855173e-08, 2.1855692e-08, -1.92, 0.25881904, 0.96592575, 2.172162e-08, 0.9659259, -0.258819, -8.106618e-08, -3.9999986, 14.87059, -4.482963)
+use_collision = true
+size = Vector3(70, 1, 1)
+material = SubResource("StandardMaterial3D_1rc8e")
+
+[node name="CSGBox3D20" type="CSGBox3D" parent="." index="4" unique_id=1135828793]
+transform = Transform3D(-3.7855173e-08, 2.1855692e-08, -1.92, 0.25881904, 0.96592575, 2.172162e-08, 0.9659259, -0.258819, -8.106618e-08, -3.9999986, -0.12940952, -0.48296294)
+use_collision = true
+size = Vector3(70, 30, 1)
+material = SubResource("StandardMaterial3D_n5262")
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="." index="5" unique_id=2022736975]
+transform = Transform3D(-3.7855173e-08, 2.1855692e-08, -1.92, 0.25881904, 0.96592575, 2.172162e-08, 0.9659259, -0.258819, -8.106618e-08, 3.8796873, 14.87059, -4.482963)
+use_collision = true
+size = Vector3(70, 1, 1)
+material = SubResource("StandardMaterial3D_1rc8e")
+
+[node name="CSGBox3D21" type="CSGBox3D" parent="." index="6" unique_id=799636846]
+transform = Transform3D(-3.7855173e-08, 2.1855692e-08, -1.92, 0.25881904, 0.96592575, 2.172162e-08, 0.9659259, -0.258819, -8.106618e-08, 3.8796873, -0.12940952, -0.48296294)
+use_collision = true
+size = Vector3(70, 30, 1)
+material = SubResource("StandardMaterial3D_n5262")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="." index="7" unique_id=937503996]
+transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, 0, 0.9999999, 2.0981474e-07, 1.0000001, 1.4901161e-08, -3.6340975e-07, 1.7810856e-06, 17, 16.499998)
+use_collision = true
+size = Vector3(26, 1, 1)
+material = SubResource("StandardMaterial3D_1rc8e")
+
+[node name="Opponent" parent="." index="8" unique_id=705691536 instance=ExtResource("2_0i20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 9)
+
+[node name="Opponent2" parent="." index="9" unique_id=644810336 instance=ExtResource("2_0i20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 15, 9)
+
+[node name="Opponent3" parent="." index="10" unique_id=1178367442 instance=ExtResource("2_0i20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 15, 9)
+
+[node name="Opponent4" parent="." index="11" unique_id=1849666679 instance=ExtResource("2_0i20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 16, 12)
+
+[node name="Opponent5" parent="." index="12" unique_id=1143757084 instance=ExtResource("2_0i20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 16, 12)
+
+[node name="Opponent6" parent="." index="13" unique_id=1297017338 instance=ExtResource("2_0i20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 16, 12)
+
+[node name="Opponent7" parent="." index="14" unique_id=1376881848 instance=ExtResource("2_0i20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 15, 6)
+
+[node name="Opponent8" parent="." index="15" unique_id=975703379 instance=ExtResource("2_0i20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 15, 6)
+
+[node name="Opponent9" parent="." index="16" unique_id=1295577472 instance=ExtResource("2_0i20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 15, 6)
+
+[node name="BoostPad" parent="." index="17" unique_id=2039738930 instance=ExtResource("3_0i20j")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 17.53664, 5.350887)
+
+[node name="Jump Pad" parent="." index="18" unique_id=1098847911 instance=ExtResource("4_vm42s")]
+transform = Transform3D(-4.371139e-08, 0, 1, -0.25881904, 0.9659258, -1.131334e-08, -0.9659258, -0.25881904, -4.222196e-08, -2, 13, 1)
+
+[node name="Area3D" parent="Jump Pad" index="1" unique_id=1057063217]
+jump_speed = 200
+
+[editable path="BoostPad"]
+[editable path="Jump Pad"]

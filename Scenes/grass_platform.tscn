@@ -18,7 +18,10 @@ albedo_texture = SubResource("GradientTexture2D_rsyfn")
 albedo_color = Color(0.4862745, 0.24705882, 0, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qiomv"]
-size = Vector3(20, 75, 8)
+size = Vector3(20, 75, 86)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_me4ec"]
+size = Vector3(28, 1, 91)
 
 [node name="Grass Platform" type="Node3D" unique_id=523264526]
 script = ExtResource("1_me4ec")
@@ -38,8 +41,12 @@ material = SubResource("StandardMaterial3D_n5262")
 [node name="Area3D" type="Area3D" parent="." unique_id=1044615233]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D" unique_id=1748938095]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -52.5)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -13.5)
 shape = SubResource("BoxShape3D_qiomv")
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D" unique_id=929037709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, 0)
+shape = SubResource("BoxShape3D_me4ec")
 
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]

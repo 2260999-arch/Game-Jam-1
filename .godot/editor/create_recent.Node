@@ -1,6 +1,8 @@
 CollisionShape3D
-Area3D
+StaticBody3D
+AnimationPlayer
 CSGBox3D
+Area3D
 CSGTorus3D
 MeshInstance3D
 RigidBody3D
