@@ -94,5 +94,8 @@ transform = Transform3D(-4.371139e-08, 0, 1, -0.25881904, 0.9659258, -1.131334e-
 [node name="Area3D" parent="Jump Pad" index="1" unique_id=1057063217]
 jump_speed = 200
 
+[node name="CollisionShape3D2" parent="Area3D2" parent_id_path=PackedInt32Array(1012121063) index="0" unique_id=929037709]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -4, 0)
+
 [editable path="BoostPad"]
 [editable path="Jump Pad"]

@@ -3,3 +3,6 @@ res://Scenes/grass_platform_jump.tscn
 res://Scenes/grass_platform.tscn
 res://Scenes/grass_platform_oppenents.tscn
 res://Scripts/platform.gd
+res://Scripts/game_over.gd
+res://Scenes/game_over.tscn
+res://Scenes/test_level.tscn

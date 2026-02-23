@@ -19,7 +19,10 @@ albedo_texture = SubResource("GradientTexture2D_rsyfn")
 albedo_color = Color(0.4862745, 0.24705882, 0, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qiomv"]
-size = Vector3(20, 75, 86)
+size = Vector3(38, 75, 86)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_045j0"]
+size = Vector3(34, 1, 98)
 
 [node name="Grass Platform Jump" type="Node3D" unique_id=523264526]
 script = ExtResource("1_045j0")
@@ -69,5 +72,12 @@ use_collision = true
 size = Vector3(71, 1, 1)
 material = SubResource("StandardMaterial3D_1rc8e")
 
+[node name="Area3D2" type="Area3D" parent="." unique_id=1734856231]
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D2" unique_id=1223061968]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -3.5)
+shape = SubResource("BoxShape3D_045j0")
+
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
+[connection signal="body_entered" from="Area3D2" to="." method="_on_area_3d_2_body_entered"]

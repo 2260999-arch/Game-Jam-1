@@ -1,0 +1,28 @@
+[gd_scene format=3 uid="uid://lbbvjxnebsga"]
+
+[ext_resource type="Script" uid="uid://dswr4f20kflct" path="res://Scripts/game_over.gd" id="1_ojehl"]
+
+[sub_resource type="Gradient" id="Gradient_i2yjh"]
+colors = PackedColorArray(0.12835406, 0, 0, 1, 0.6993055, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_ojehl"]
+gradient = SubResource("Gradient_i2yjh")
+fill_from = Vector2(0.4809028, 1)
+fill_to = Vector2(0.4878472, 0)
+
+[node name="GameOver" type="Node2D" unique_id=1730961808]
+script = ExtResource("1_ojehl")
+
+[node name="TextureRect" type="TextureRect" parent="." unique_id=438360959]
+offset_right = 1152.0
+offset_bottom = 648.0
+texture = SubResource("GradientTexture2D_ojehl")
+
+[node name="Button" type="Button" parent="." unique_id=2097451871]
+offset_left = 478.0
+offset_top = 359.0
+offset_right = 486.0
+offset_bottom = 367.0
+text = "RESTART"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
