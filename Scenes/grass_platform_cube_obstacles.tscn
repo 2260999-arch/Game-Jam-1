@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://ca3a3fq6rk1i8"]
+
+[ext_resource type="PackedScene" uid="uid://cgqpg3bl07ghk" path="res://Scenes/grass_platform.tscn" id="1_hl2ne"]
+[ext_resource type="PackedScene" uid="uid://fpylafb8n3v5" path="res://Scenes/hurt_block.tscn" id="2_xl2v2"]
+
+[node name="Grass Platform Cube Obstacles" unique_id=523264526 instance=ExtResource("1_hl2ne")]
+
+[node name="Hurt_Block" parent="." index="4" unique_id=1648189526 instance=ExtResource("2_xl2v2")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, 17.850723, 3)
+
+[node name="Hurt_Block2" parent="." index="5" unique_id=1346842034 instance=ExtResource("2_xl2v2")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -4, 12.57912, -17)
+
+[node name="Hurt_Block3" parent="." index="6" unique_id=1148608853 instance=ExtResource("2_xl2v2")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, 7.155012, -37)
+
+[node name="Hurt_Block4" parent="." index="7" unique_id=1254699570 instance=ExtResource("2_xl2v2")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 4, 12.57912, -17)

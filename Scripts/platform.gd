@@ -6,7 +6,8 @@ extends Node3D
 @onready var p2 = load("res://Scenes/grass_platform_jump.tscn")
 @onready var p3 = load("res://Scenes/grass_platform_speed_boost.tscn")
 @onready var p4 = load("res://Scenes/grass_platform_oppenents.tscn")
-@onready var platforms : Array = [p1, p2, p3, p4]
+@onready var p5 = load("res://Scenes/grass_platform_cube_obstacles.tscn")
+@onready var platforms : Array = [p1, p2, p3, p4, p5]
 @onready var next_lvl = 0
 @onready var new_platform = load("res://Scenes/grass_platform.tscn")
 var plat
@@ -41,11 +42,12 @@ func _on_area_3d_body_exited(body: Node3D) -> void:
 		queue_free()
 
 func next_num() -> void:
-	next_lvl = num_gen.randi_range(0,3)
+	next_lvl = num_gen.randi_range(0,4)
 	
 
-
+# ends game when you fall off the edge
 func _on_area_3d_2_body_entered(body: Node3D) -> void:
 	if body is Player:
-		PlatformManager.remove_child(plat)
+		for child in PlatformManager.get_children():
+			child.queue_free()
 		get_tree().change_scene_to_file("res://Scenes/game_over.tscn")

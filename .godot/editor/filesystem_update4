@@ -1,8 +1,6 @@
-res://Scenes/grass_platform_speed_boost.tscn
-res://Scenes/grass_platform_jump.tscn
-res://Scenes/grass_platform.tscn
-res://Scenes/grass_platform_oppenents.tscn
-res://Scripts/platform.gd
-res://Scripts/game_over.gd
-res://Scenes/game_over.tscn
 res://Scenes/test_level.tscn
+res://Scripts/platform.gd
+res://Scripts/hurt_block.gd
+res://Scenes/hurt_block.tscn
+res://Scenes/grass_platform_cube_obstacles.tscn
+res://Scenes/grass_platform_oppenents.tscn
