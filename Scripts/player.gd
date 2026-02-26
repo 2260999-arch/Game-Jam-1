@@ -4,6 +4,7 @@ class_name Player
 
 @onready var mesh_instance_3d: MeshInstance3D = $MeshInstance3D
 @onready var camera_3d: Camera3D = $Camera3D
+@export var score = 0
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
 	camera_3d.top_level = true

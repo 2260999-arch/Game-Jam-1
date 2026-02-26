@@ -65,6 +65,14 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 18.827927, -21)
 [node name="CollisionShape3D2" type="CollisionShape3D" parent="Area3D2" unique_id=764630637]
 shape = SubResource("BoxShape3D_py1kb")
 
+[node name="CollisionShape3D3" type="CollisionShape3D" parent="Area3D2" unique_id=1718844155]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, -15, 14, 0)
+shape = SubResource("BoxShape3D_py1kb")
+
+[node name="CollisionShape3D4" type="CollisionShape3D" parent="Area3D2" unique_id=589584285]
+transform = Transform3D(-4.371139e-08, -1, 0, 1, -4.371139e-08, 0, 0, 0, 1, 15, 14, 0)
+shape = SubResource("BoxShape3D_py1kb")
+
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
 [connection signal="body_exited" from="Area3D" to="." method="_on_area_3d_body_exited"]
 [connection signal="body_entered" from="Area3D2" to="." method="_on_area_3d_2_body_entered"]

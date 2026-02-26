@@ -1,0 +1,24 @@
+[gd_scene format=3 uid="uid://jk3kbqig0d4r"]
+
+[ext_resource type="Script" uid="uid://ddiwdb1f7n2nk" path="res://Scripts/score_tracker.gd" id="1_bi3i1"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_bi3i1"]
+font_size = 64
+
+[node name="Score Tracker" type="Control" unique_id=1065404667]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_bi3i1")
+
+[node name="Score" type="Label" parent="." unique_id=1675850468]
+layout_mode = 0
+offset_left = 557.0
+offset_right = 597.0
+offset_bottom = 88.0
+text = "0"
+label_settings = SubResource("LabelSettings_bi3i1")
+horizontal_alignment = 1

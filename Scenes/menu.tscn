@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://bbvbfgsytow76"]
+
+[node name="Menu" type="Control" unique_id=839772664]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=2124206660]
+modulate = Color(0.6190818, 0.6190819, 0.6190818, 0.21568628)
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(28.799156, 16.196892)

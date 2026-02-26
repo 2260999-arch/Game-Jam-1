@@ -17,6 +17,7 @@ config/icon="res://icon.svg"
 [autoload]
 
 PlatformManager="*uid://bk4od71uygngm"
+PlayerManager="*uid://b7m6pdmavbbyv"
 
 [input]
 
