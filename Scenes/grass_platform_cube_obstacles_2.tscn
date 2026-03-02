@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://cn1xtwj0bk8j1"]
+
+[ext_resource type="PackedScene" uid="uid://cgqpg3bl07ghk" path="res://Scenes/grass_platform.tscn" id="1_cy46s"]
+[ext_resource type="PackedScene" uid="uid://fpylafb8n3v5" path="res://Scenes/hurt_block.tscn" id="2_d0h1d"]
+
+[node name="Grass Platform" unique_id=523264526 instance=ExtResource("1_cy46s")]
+
+[node name="Hurt_Block" parent="." index="4" unique_id=1648189526 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 4, 17, 0)
+
+[node name="Hurt_Block2" parent="." index="5" unique_id=821581299 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 3, 17, 0)
+
+[node name="Hurt_Block3" parent="." index="6" unique_id=702122911 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 2, 17, 0)
+
+[node name="Hurt_Block4" parent="." index="7" unique_id=834827532 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 1, 17, 0)
+
+[node name="Hurt_Block5" parent="." index="8" unique_id=781264902 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, 17, 0)
+
+[node name="Hurt_Block6" parent="." index="9" unique_id=1209483051 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -1, 17, 0)
+
+[node name="Hurt_Block24" parent="." index="10" unique_id=1098118870 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 3.7637088, 22.342722, 19.372257)
+
+[node name="Hurt_Block25" parent="." index="11" unique_id=1238322655 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 2.7637088, 22.342722, 19.372257)
+
+[node name="Hurt_Block26" parent="." index="12" unique_id=1658802526 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 1.7637088, 22.342722, 19.372257)
+
+[node name="Hurt_Block27" parent="." index="13" unique_id=1617794747 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -2.2362912, 22.342722, 19.372257)
+
+[node name="Hurt_Block28" parent="." index="14" unique_id=820456544 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -3.2362912, 22.342722, 19.372257)
+
+[node name="Hurt_Block29" parent="." index="15" unique_id=1420718347 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -4.236291, 22.342722, 19.372257)
+
+[node name="Hurt_Block13" parent="." index="16" unique_id=2123715993 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 1, 7.656624, -35)
+
+[node name="Hurt_Block19" parent="." index="17" unique_id=660882993 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 0, 7.656624, -35)
+
+[node name="Hurt_Block20" parent="." index="18" unique_id=1349187322 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -1, 7.656624, -35)
+
+[node name="Hurt_Block21" parent="." index="19" unique_id=1717031404 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -2, 7.656624, -35)
+
+[node name="Hurt_Block22" parent="." index="20" unique_id=1395524110 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -3, 7.656624, -35)
+
+[node name="Hurt_Block23" parent="." index="21" unique_id=653048662 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -4, 7.656624, -35)
+
+[node name="Hurt_Block7" parent="." index="22" unique_id=411863399 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 4, 11.731311, -20)
+
+[node name="Hurt_Block8" parent="." index="23" unique_id=277110108 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 3, 11.731311, -20)
+
+[node name="Hurt_Block9" parent="." index="24" unique_id=245103707 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, 2, 11.731311, -20)
+
+[node name="Hurt_Block10" parent="." index="25" unique_id=633116261 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -2, 11.731311, -20)
+
+[node name="Hurt_Block11" parent="." index="26" unique_id=2141484001 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -3, 11.731311, -20)
+
+[node name="Hurt_Block12" parent="." index="27" unique_id=52880115 instance=ExtResource("2_d0h1d")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -4, 11.731311, -20)

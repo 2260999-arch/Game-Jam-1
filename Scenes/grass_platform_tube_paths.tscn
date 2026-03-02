@@ -1,0 +1,145 @@
+[gd_scene format=3 uid="uid://p0dsmdshr2ua"]
+
+[ext_resource type="PackedScene" uid="uid://cgqpg3bl07ghk" path="res://Scenes/grass_platform.tscn" id="1_2srvq"]
+[ext_resource type="PackedScene" uid="uid://d07xbbe2d04f5" path="res://Scenes/boost_pad.tscn" id="2_pg5gx"]
+[ext_resource type="PackedScene" uid="uid://dsp5xbhp3dw3p" path="res://Scenes/jump_pad.tscn" id="3_krhat"]
+
+[sub_resource type="Gradient" id="Gradient_btda1"]
+offsets = PackedFloat32Array(0, 0.46721312, 1)
+colors = PackedColorArray(0.26948398, 0.26948398, 0.26948398, 1, 0, 0, 0, 1, 0.5163934, 0.5163934, 0.5163934, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_xq3o0"]
+gradient = SubResource("Gradient_btda1")
+fill_from = Vector2(0, 0.0019011407)
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_upika"]
+albedo_texture = SubResource("GradientTexture2D_xq3o0")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_xjwfy"]
+albedo_texture = SubResource("GradientTexture2D_xq3o0")
+
+[sub_resource type="Gradient" id="Gradient_33hx5"]
+offsets = PackedFloat32Array(0, 0.48360655, 1)
+colors = PackedColorArray(0, 0, 1, 1, 1, 0, 0, 1, 0.015686275, 1, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_1rqgg"]
+gradient = SubResource("Gradient_33hx5")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_njnrh"]
+albedo_texture = SubResource("GradientTexture2D_1rqgg")
+
+[node name="Grass Platform Tube Paths" unique_id=523264526 instance=ExtResource("1_2srvq")]
+
+[node name="CSGBox3D13" type="CSGBox3D" parent="." index="1" unique_id=1216509510]
+transform = Transform3D(-3.7855177e-08, 2.1855692e-08, -9.6, -0.07751949, 0.99699074, 2.3735471e-07, 0.996991, 0.07751949, -3.4605148e-07, 1.221622e-06, 25.125652, -9.754886)
+use_collision = true
+size = Vector3(48.441895, 1, 1)
+material = SubResource("StandardMaterial3D_upika")
+
+[node name="CSGBox3D14" type="CSGBox3D" parent="." index="2" unique_id=66093345]
+transform = Transform3D(-3.8880383e-09, 2.0330873e-08, -9.6, -0.10239917, -0.07211119, 3.4605148e-07, -0.007961894, 0.9274332, 2.3735483e-07, 1.221622e-06, 28.125652, -9.754886)
+use_collision = true
+size = Vector3(48.441895, 1, 1)
+material = SubResource("StandardMaterial3D_upika")
+
+[node name="CSGBox3D12" type="CSGBox3D" parent="." index="3" unique_id=661471934]
+transform = Transform3D(-3.7855177e-08, 5.2453665e-08, -9.6, 0, 2.3999999, 2.0981474e-07, 1.0000001, 3.576279e-08, -3.6340975e-07, -0.032810476, 13.25732, -13.523485)
+use_collision = true
+size = Vector3(11.473755, 2, 0.2783203)
+material = SubResource("StandardMaterial3D_xjwfy")
+
+[node name="CSGTorus3D" type="CSGTorus3D" parent="." index="7" unique_id=255792581]
+transform = Transform3D(1, 0, 0, 0, -5.3057914, 0.96592665, 0, -19.80148, -0.25881934, 3, 20.250872, 12)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D2" type="CSGTorus3D" parent="." index="8" unique_id=1222731614]
+transform = Transform3D(1, 0, 0, 0, -5.3057914, 0.96592665, 0, -19.80148, -0.25881934, 0, 20.250872, 12)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D3" type="CSGTorus3D" parent="." index="9" unique_id=853131889]
+transform = Transform3D(1, 0, 0, 0, -5.3057914, 0.96592665, 0, -19.80148, -0.25881934, -3, 20.250872, 12)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D4" type="CSGTorus3D" parent="." index="10" unique_id=1235686787]
+transform = Transform3D(1, 0, 0, 0, -5.3057914, 0.96592665, 0, -19.80148, -0.25881934, 3, 17.980707, 3.5190601)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D5" type="CSGTorus3D" parent="." index="11" unique_id=502852286]
+transform = Transform3D(1, 0, 0, 0, -5.3057914, 0.96592665, 0, -19.80148, -0.25881934, 0, 17.980707, 3.5190601)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D6" type="CSGTorus3D" parent="." index="12" unique_id=283874087]
+transform = Transform3D(1, 0, 0, 0, -5.3057914, 0.96592665, 0, -19.80148, -0.25881934, -3, 17.980707, 3.5190601)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D10" type="CSGTorus3D" parent="." index="13" unique_id=1763105031]
+transform = Transform3D(1, 0, 0, 0, -5.3057914, 0.96592665, 0, -19.80148, -0.25881934, -3, 15.710281, -13.513823)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D7" type="CSGTorus3D" parent="." index="14" unique_id=817767889]
+transform = Transform3D(1, 0, 0, 0, -9.536743e-07, 1.0000008, 0, -20.500002, -8.940697e-08, 3, 16.887093, -5.103883)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D11" type="CSGTorus3D" parent="." index="15" unique_id=2088927117]
+transform = Transform3D(1, 0, 0, 0, -9.536743e-07, 1.0000008, 0, -20.500002, -8.940697e-08, 3, 16.887093, -13.929891)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D12" type="CSGTorus3D" parent="." index="16" unique_id=174312298]
+transform = Transform3D(1, 0, 0, 0, -9.536743e-07, 1.0000008, 0, -20.500002, -8.940697e-08, 3, 16.887093, -22.882)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D8" type="CSGTorus3D" parent="." index="17" unique_id=1381105868]
+transform = Transform3D(1, 0, 0, 0, -9.536743e-07, 1.0000008, 0, -20.500002, -8.940697e-08, 0, 16.887093, -5.103883)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="CSGTorus3D9" type="CSGTorus3D" parent="." index="18" unique_id=1147710811]
+transform = Transform3D(1, 0, 0, 0, -9.536743e-07, 1.0000008, 0, -20.500002, -8.940697e-08, -3, 16.887093, -5.103883)
+use_collision = true
+inner_radius = 1.0
+outer_radius = 1.5
+material = SubResource("StandardMaterial3D_njnrh")
+
+[node name="BoostPad" parent="." index="19" unique_id=2039738930 instance=ExtResource("2_pg5gx")]
+transform = Transform3D(0.64913607, 0, 0, 0, 0.72681487, 0, 0, 0, 1, 2.9675016, 16.103397, -25.772581)
+
+[node name="BoostPad3" parent="." index="20" unique_id=1538912255 instance=ExtResource("2_pg5gx")]
+transform = Transform3D(0.64913607, 0, 0, 0, 0.72681487, 0, 0, 0, 1, -0.04988146, 15.717381, -17.514095)
+
+[node name="BoostPad2" parent="." index="21" unique_id=1490530519 instance=ExtResource("2_pg5gx")]
+transform = Transform3D(0.64913607, 0, 0, 0, 0.72681487, 0, 0, 0, 1, 2.9675016, 16.103397, -17.07776)
+
+[node name="Jump Pad" parent="." index="22" unique_id=1098847911 instance=ExtResource("3_krhat")]
+transform = Transform3D(1, 0, 0, 0, 0.9659258, 0.25881904, 0, -0.25881904, 0.9659258, -3, 6.924391, -36.349327)

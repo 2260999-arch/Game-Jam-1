@@ -19,6 +19,6 @@ func _process(delta: float) -> void:
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("Move_Left"):
-		apply_force(Vector3i(-5,0,0))
+		apply_force(Vector3i(-10,0,0))
 	if Input.is_action_pressed("Move_Right"):
-		apply_force(Vector3i(5,0,0))
+		apply_force(Vector3i(10,0,0))

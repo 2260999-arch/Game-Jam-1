@@ -17,3 +17,8 @@ func _on_restart_pressed() -> void:
 	PlayerManager.score = 0
 	get_tree().change_scene_to_file("res://Scenes/test_level.tscn")
 	
+
+
+func _on_menu_pressed() -> void:
+	PlayerManager.score = 0
+	get_tree().change_scene_to_file("res://Scenes/menu_bg.tscn")
