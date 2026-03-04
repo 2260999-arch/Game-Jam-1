@@ -1,5 +1,7 @@
-Button
 Label
+Label3D
+Timer
+Button
 Camera3D
 CSGBox3D
 ColorRect
@@ -10,5 +12,3 @@ CollisionShape3D
 StaticBody3D
 Area3D
 TextureRect
-Node2D
-AnimationPlayer

@@ -1,7 +1,6 @@
 extends RigidBody3D
 class_name Player
 
-
 @onready var mesh_instance_3d: MeshInstance3D = $MeshInstance3D
 @onready var camera_3d: Camera3D = $Camera3D
 @export var score = 0
@@ -16,6 +15,8 @@ func _process(delta: float) -> void:
 	camera_3d.global_position.z = global_position.z+2
 	camera_3d.global_position.x = global_position.x
 	camera_3d.look_at(mesh_instance_3d.global_position)
+	if Input.is_action_pressed("End Game"):
+		get_tree().change_scene_to_file("res://Scenes/game_over.tscn")
 
 func _physics_process(delta: float) -> void:
 	if Input.is_action_pressed("Move_Left"):

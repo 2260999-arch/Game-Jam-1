@@ -1,5 +1,6 @@
 extends Control
 
+@onready var time_left: Label = $TimeLeft
 @onready var score: Label = $Score
 @export var total = Player
 

@@ -1,7 +1,8 @@
-res://Scenes/grass_platform_cube_obstacles_2.tscn
+res://Scenes/menu_bg.tscn
 res://Scripts/platform.gd
+res://Scripts/player_manager.gd
+res://Scenes/score_tracker.tscn
+res://Scripts/score_tracker.gd
+res://Scenes/player.tscn
 res://Scripts/player.gd
-res://Scenes/grass_platform_tube_paths.tscn
-res://Scenes/grass_platform.tscn
-res://Scenes/grass_platform_jump.tscn
-res://Scenes/grass_platform_speed_boost.tscn
+res://Scenes/menu.tscn
